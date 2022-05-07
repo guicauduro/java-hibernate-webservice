@@ -14,6 +14,9 @@ import com.guilherme.javahibernatews.repositories.UserRepository;
 @Profile("test")
 public class TestConfig implements CommandLineRunner {
 
+//	Usa-se o Autowired para resolver essa dependencia e associar
+//	uma instancia do UserRepository no testconfig (329)
+	
 	@Autowired
 	private UserRepository userRepository;
 
